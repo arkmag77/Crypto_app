@@ -37,7 +37,7 @@ class Crypto extends Component {
                 
                 const tickers = res.data;
 
-                console.log("tickers", tickers);
+                // console.log("tickers", tickers);
                 
 
                 this.setState((state) => {
@@ -61,7 +61,7 @@ class Crypto extends Component {
                             buy: cryptoRate.buy,
                             sell: cryptoRate.sell,
                             lastRate: cryptoRate.last,
-                           /*  _15m: cryptoRate._15m, */
+                            // pietansciem: cryptoRate.15m,
                         }
 
                         if (lastCryptoObj !== undefined) {
@@ -126,7 +126,7 @@ class Crypto extends Component {
             });
 
         });
-        console.log("FilteredCryptolist", this.state.filteredCryptoList);
+        // console.log("FilteredCryptolist", this.state.filteredCryptoList);
     }
 
 
